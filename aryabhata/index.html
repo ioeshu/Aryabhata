@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>KALAMSAT-V2/PSLV Tracker</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <header style="z-index:1 !important;">
+        <div class="ghost-box">
+          <h1>KALAMSAT-V2/PSLV Tracker</h1>
+          <p>Latitude: <span id="latitude"></span> | Longitude: <span id="longitude"></span> | Altitude: <span id="altitude"></span></p>
+          <p><a href="javascript:openHelp();">Help</a> | Representation: <a href="javascript:toggleRepresentation();" id="representation">3D</a> | Follow: <a href="javascript:toggleFollow();" id="follow">Off</a></p>
+        </div>
+      </header>
+      <canvas id="wwd" class="balloon align-self-center">
+              Your browser does not support HTML5 Canvas.
+      </canvas>
+      <footer>
+        <div class="ghost-box">
+        <p><a href="javascript:opneAbout();">About</a></p>
+        </div>
+      </footer>
+    </div>
+    <script src="libraries/worldwind.js"></script>
+    <script src="libraries/satellite.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
